@@ -161,8 +161,11 @@
 
         display: flex;
         justify-content: space-between;
-        gap: 15px;
+        gap: 12px;
         align-items: center;
+
+        width: 100%;
+        min-width: 0;
 
         opacity: 0;
         transform: translateY(25px);
@@ -196,18 +199,23 @@
     .item-name {
         font-weight: bold;
         font-size: 17px;
+        min-width: 0;
+        flex: 1;
     }
 
     .price {
         font-weight: bold;
         color: #9b5b16;
         white-space: nowrap;
+        flex-shrink: 0;
+        font-size: 16px;
         transition: transform 0.3s ease;
     }
 
     .item:hover .price {
         transform: scale(1.08);
     }
+    
 
     /* ABOUT */
 
